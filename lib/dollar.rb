@@ -1,7 +1,8 @@
 class Dollar
-  attr_reader :amount
+  attr_accessor :amount
 
   def initialize(amount)
+    @amount = 10
   end
 
   def times(multiplier)
