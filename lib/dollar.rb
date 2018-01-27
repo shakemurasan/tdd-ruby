@@ -10,7 +10,7 @@ class Dollar
   end
 
   def equals(obj)
-    dollar = obj
+    dollar = obj.clone
     @amount == dollar.amount
   end
 end
