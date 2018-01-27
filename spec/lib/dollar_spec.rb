@@ -15,4 +15,8 @@ describe 'MoneyTest' do
       expect(product.amount).to eq 15
     end
   end
+
+  describe '#equals' do
+    it { expect(Dollar.new(5).equals(Dollar.new(5))).to eq true }
+  end
 end
