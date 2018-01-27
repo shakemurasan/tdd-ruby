@@ -2,13 +2,17 @@ require 'spec_helper'
 require 'dollar'
 
 describe 'MoneyTest' do
-  it 'multiplication' do
-    five = Dollar.new(5)
+  describe '#times' do
+    let(:five) { Dollar.new(5) }
 
-    product = five.times(2)
-    expect(product.amount).to eq 10
+    it 'input 2' do
+      product = five.times(2)
+      expect(product.amount).to eq 10
+    end
 
-    product = five.times(3)
-    expect(product.amount).to eq 15
+    it 'input 3' do
+      product = five.times(3)
+      expect(product.amount).to eq 15
+    end
   end
 end
