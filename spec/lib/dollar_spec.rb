@@ -5,15 +5,8 @@ describe 'MoneyTest' do
   describe '#times' do
     let(:five) { Dollar.new(5) }
 
-    it 'input 2' do
-      product = five.times(2)
-      expect(product.amount).to eq 10
-    end
-
-    it 'input 3' do
-      product = five.times(3)
-      expect(product.amount).to eq 15
-    end
+    it { expect(five.times(2)) == Dollar.new(10) }
+    it { expect(five.times(3)) == Dollar.new(15) }
   end
 
   describe '#equals' do
