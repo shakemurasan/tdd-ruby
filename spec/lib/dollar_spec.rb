@@ -7,12 +7,12 @@ describe 'MoneyTest' do
 
     it 'input 2' do
       product = five.times(2)
-      expect(product.amount).to eq 10
+      expect(product) == Dollar.new(10)
     end
 
     it 'input 3' do
       product = five.times(3)
-      expect(product.amount).to eq 15
+      expect(product) == Dollar.new(15)
     end
   end
 
