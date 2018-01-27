@@ -8,4 +8,9 @@ class Dollar
   def times(multiplier)
     Dollar.new(@amount * multiplier)
   end
+
+  def equals(obj)
+    dollar = obj.clone
+    @amount == dollar.amount
+  end
 end
