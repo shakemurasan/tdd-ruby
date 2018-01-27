@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'dollar'
 
-describe 'MoneyTest' do
+describe Dollar do
   describe '#times' do
     let(:five) { Dollar.new(5) }
 
