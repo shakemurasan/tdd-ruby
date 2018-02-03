@@ -8,6 +8,10 @@ class Money
     @amount = amount
   end
 
+  def times(_multiplier)
+    raise NotImplementedError
+  end
+
   def equals(obj)
     (@amount == obj.amount) && (self.class == obj.class)
   end
