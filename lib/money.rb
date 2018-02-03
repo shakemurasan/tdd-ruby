@@ -7,8 +7,6 @@ class Money
   end
 
   def equals(obj)
-    money = obj.clone
-    puts self.class
-    (@amount == money.amount) && (self.class == Money)
+    (@amount == obj.amount) && (self.class == obj.class)
   end
 end
