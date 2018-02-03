@@ -1,5 +1,7 @@
 require 'spec_helper'
 require 'money'
+require 'dollar'
+require 'franc'
 
 describe Money do
   describe '#equals' do
