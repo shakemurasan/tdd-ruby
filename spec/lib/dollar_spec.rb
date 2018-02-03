@@ -3,7 +3,7 @@ require 'dollar'
 
 describe Dollar do
   describe '#times' do
-    let(:five) { Dollar.new(5) }
+    let(:five) { Money.dollar(5) }
 
     it { expect(five.times(2)) == Dollar.new(10) }
     it { expect(five.times(3)) == Dollar.new(15) }
