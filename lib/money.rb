@@ -1,6 +1,7 @@
-require 'dollar'
-
 class Money
+  require 'dollar'
+  require 'franc'
+
   # TODO: Rubyでのインスタンス変数のprivate化がわからないので一旦保留
   attr_accessor :amount
 
